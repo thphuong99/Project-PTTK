@@ -1,0 +1,11 @@
+C:\Users\nguye\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\bin\Debug\DTO.dll
+C:\Users\nguye\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\bin\Debug\DTO.pdb
+C:\Users\nguye\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\nguye\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\obj\Debug\DTO.dll
+C:\Users\nguye\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\obj\Debug\DTO.pdb
+C:\Users\Admin\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\bin\Debug\DTO.dll
+C:\Users\Admin\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\bin\Debug\DTO.pdb
+C:\Users\Admin\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\obj\Debug\DTO.dll
+C:\Users\Admin\Desktop\PTTK_HTTT_ThucHanh\Desktop\DTO\obj\Debug\DTO.pdb

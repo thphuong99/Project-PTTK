@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C6BF3C4D-8014-4103-B583-20E50E367BE4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>demo</RootNamespace>
+    <AssemblyName>demo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BHPL_comment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BHPL_comment.Designer.cs">
+      <DependentUpon>BHPL_comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="comment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comment.Designer.cs">
+      <DependentUpon>comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhGiaSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhGiaSP.designer.cs">
+      <DependentUpon>DanhGiaSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachSP.designer.cs">
+      <DependentUpon>DanhSachSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanTinQC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanTinQC.Designer.cs">
+      <DependentUpon>frmNhanTinQC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyQuangCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyQuangCao.Designer.cs">
+      <DependentUpon>frmQuanLyQuangCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHopDong.Designer.cs">
+      <DependentUpon>frmHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hóa Đơn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hóa Đơn.designer.cs">
+      <DependentUpon>Hóa Đơn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NVQL_comment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NVQL_comment.Designer.cs">
+      <DependentUpon>NVQL_comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QL_DDH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_DDH.designer.cs">
+      <DependentUpon>QL_DDH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_DTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_DTH.designer.cs">
+      <DependentUpon>QL_DTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy.Designer.cs">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToan.designer.cs">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeHangHoa.designer.cs">
+      <DependentUpon>ThongKeHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thẻ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thẻ.designer.cs">
+      <DependentUpon>Thẻ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XacNhanNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XacNhanNhapHang.designer.cs">
+      <DependentUpon>XacNhanNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XU_LI_THANH_TOAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XU_LI_THANH_TOAN.designer.cs">
+      <DependentUpon>XU_LI_THANH_TOAN.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BHPL_comment.resx">
+      <DependentUpon>BHPL_comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="comment.resx">
+      <DependentUpon>comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhGiaSP.resx">
+      <DependentUpon>DanhGiaSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachSP.resx">
+      <DependentUpon>DanhSachSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanTinQC.resx">
+      <DependentUpon>frmNhanTinQC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyQuangCao.resx">
+      <DependentUpon>frmQuanLyQuangCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHopDong.resx">
+      <DependentUpon>frmHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hóa Đơn.resx">
+      <DependentUpon>Hóa Đơn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NVQL_comment.resx">
+      <DependentUpon>NVQL_comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_DDH.resx">
+      <DependentUpon>QL_DDH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_DTH.resx">
+      <DependentUpon>QL_DTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy.resx">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhToan.resx">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeHangHoa.resx">
+      <DependentUpon>ThongKeHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thẻ.resx">
+      <DependentUpon>Thẻ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XacNhanNhapHang.resx">
+      <DependentUpon>XacNhanNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XU_LI_THANH_TOAN.resx">
+      <DependentUpon>XU_LI_THANH_TOAN.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{b102dd95-ab9e-48cf-849d-0ec4eca4b630}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{76ed1a0f-b94c-4089-b6cc-13e7ea0bfd12}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{7752b935-35fb-4239-81ce-73e18db609c1}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background11.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
