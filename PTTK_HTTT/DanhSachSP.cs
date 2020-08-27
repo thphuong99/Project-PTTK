@@ -95,6 +95,8 @@ namespace GUI
 
             //this.sANPHAMTableAdapter.Fill(this.bAN_HANGDataSet.SANPHAM);
 
+            DataGridViewTextBoxColumn dgvcId1 = new DataGridViewTextBoxColumn();
+            dgvcId1.HeaderText = "Mã sản phẩm";
             DataGridViewTextBoxColumn dgvcId2 = new DataGridViewTextBoxColumn();
             dgvcId2.HeaderText = "Tên sản phẩm";
             DataGridViewTextBoxColumn dgvcId3 = new DataGridViewTextBoxColumn();
@@ -107,7 +109,7 @@ namespace GUI
             dgvcId6.HeaderText = "Xóa";
 
 
-
+            dtgvSPDatHang.Columns.Add(dgvcId1);
             dtgvSPDatHang.Columns.Add(dgvcId2);
             dtgvSPDatHang.Columns.Add(dgvcId3);
             dtgvSPDatHang.Columns.Add(dgvcId4);
@@ -131,7 +133,7 @@ namespace GUI
             {
                 DataGridViewRow row = dtgvDSSP.CurrentRow;
 
-                dtgvSPDatHang.Rows.Add(row.Cells[2].Value, row.Cells[3].Value.ToString(), 1, row.Cells[3].Value.ToString());
+                dtgvSPDatHang.Rows.Add(row.Cells[1].Value, row.Cells[2].Value, row.Cells[3].Value.ToString(), 1, row.Cells[3].Value.ToString());
 
                 tt += Convert.ToDouble(row.Cells[3].Value.ToString());
                 
@@ -185,19 +187,19 @@ namespace GUI
                 for (int i = 0; i <= dtgvSPDatHang.Rows.Count - 2; i++)
                 {
                     
-                    ct.MASP =  Int16.Parse( dtgvSPDatHang.Rows[i].Cells[2].Value.ToString());
+                    ct.MASP =  Int32.Parse(dtgvSPDatHang.Rows[i].Cells[0].Value.ToString());
                     ct.SOLUONG = 1;
-                    ct.THANHTIEN = float.Parse(dtgvSPDatHang.Rows[i].Cells[3].Value.ToString()); 
-                    if (dalCT.insertCTDDH(ct))
-                    {
+                    ct.THANHTIEN = float.Parse(dtgvSPDatHang.Rows[i].Cells[3].Value.ToString());
+                    dalCT.insertCTDDH(ct);
+
                        
-                        ThanhToan tt = new ThanhToan();
-                        tt.Show();
-                        this.Hide();
-                    }
+                        
+
 
                 }
-
+                ThanhToan tt = new ThanhToan();
+                tt.Show();
+                this.Hide();
             }
             else
             {
