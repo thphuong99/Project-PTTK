@@ -178,9 +178,10 @@ namespace GUI
             }
             dh.TONGTIEN = tongtien;
             dh.TRANGTHAI = 0;
-            ct.MADH = DAL_DonHang.Instance.getIDDH();
+            
             if (DAL_DonHang.Instance.insertDonHang(dh))
             {
+                ct.MADH = DAL_DonHang.Instance.getIDDH();
                 for (int i = 0; i <= dtgvSPDatHang.Rows.Count - 2; i++)
                 {
                     
